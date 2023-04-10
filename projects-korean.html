@@ -3,15 +3,7 @@ layout: default
 ---
 
 <div class="projects">
-
-  <h2>Seq2Seq-Transformer   </h2><h5>Github Link: <a href="https://github.com/jkim574/Seq2Seq-Transformer">https://github.com/jkim574/Seq2Seq-Transformer</a></h5>
-  <p>PyTorch에서 Transformer 아키텍처를 활용한 시퀀스-투-시퀀스 모델을 구현했습니다. 이 모델은 수치 시퀀스를 패턴을 학습하고 예측합니다. 사용자 지정 위치 인코딩, 인코더-디코더 트랜스포머 블록 및 타겟 마스킹을 사용하여 효과적인 훈련을 합니다. 이 구현에서 사용된 Transformer 모델은 다음과 같은 레이어로 구성됩니다.</p>
-  <p>위치 인코더(Positional Encoder): 입력 임베딩에 위치 정보를 추가하여 모델이 시퀀스 정보를 인코딩할 수 있도록 합니다. 입력 시퀀스에 위치 인코딩을 계산하고 적용하는 사용자 정의 PositionalEncoding 클래스가 포함됩니다.</p>
-  <p>임베딩(Embedding): 이 레이어는 입력 토큰을 연속 벡터 공간에 매핑합니다.</p>
-  <p>Transformer 블록(Transformer Blocks): 이는 자기 어텐션 레이어와 feedforward 레이어가 연이어 쌓인 구조입니다. 이를 통해 모델은 입력 토큰 간의 관계를 파악할 수 있습니다.</p>
-  <p>출력 레이어(Output Layer): Transformer 블록의 출력을 대상 어휘로 매핑합니다.</p>
-  <p>확률적 경사 하강법(SGD) 옵티마이저와 CrossEntropyLoss 손실 함수를 사용했고 epoch 이후 모델의 성능을 평가하는 validation_loop이 포함되며 10번의 epoch 동안 훈련되었습니다. 그리고 predict 함수를 사용하여 숫자 시퀀스를 전달하고 시퀀스의 다음 예상되는 숫자 패턴을 예측함으로써 평가되었습니다</p>
-  <br>
+  
   
   
   <h2>Simple-ViT   </h2><h5>Github Link: <a href="https://github.com/jkim574/Simple-VIT">https://github.com/jkim574/Simple-VIT</a></h5>
@@ -27,6 +19,22 @@ layout: default
     <li>분류 결과를 시각화하여 각 클래스에 대한 출력 확률을 나타냅니다. </li>
   </ul>
   <p>이미지 분류에 사전 훈련된 Vision Transformer 모델의 사용을 보여주고, 패치 임베딩, 위치 임베딩 및 멀티 헤드 어텐션과 같은 ViT모델의 중간 출력 및 구성 요소를 시각화하여 모델의 입력 패치 간의 복잡한 관계를 이해할 수 있습니다. </p>
+  <br>
+  
+  
+  
+  
+  <h2>Seq2Seq-Transformer   </h2><h5>Github Link: <a href="https://github.com/jkim574/Seq2Seq-Transformer">https://github.com/jkim574/Seq2Seq-Transformer</a></h5>
+  <p>PyTorch에서 Transformer 아키텍처를 활용한 시퀀스-투-시퀀스 모델을 구현했습니다. 이 모델은 수치 시퀀스를 패턴을 학습하고 예측합니다. 사용자 지정 위치 인코딩, 인코더-디코더 트랜스포머 블록 및 타겟 마스킹을 사용하여 효과적인 훈련을 합니다. 이 구현에서 사용된 Transformer 모델은 다음과 같은 레이어로 구성됩니다.<br>
+    위치 인코더(Positional Encoder): 입력 임베딩에 위치 정보를 추가하여 모델이 시퀀스 정보를 인코딩할 수 있도록 합니다. 입력 시퀀스에 위치 인코딩을 계산하고 적용하는 사용자 정의 PositionalEncoding 클래스가 포함됩니다.<br>
+    임베딩(Embedding): 이 레이어는 입력 토큰을 연속 벡터 공간에 매핑합니다.<br>
+    Transformer 블록(Transformer Blocks): 이는 자기 어텐션 레이어와 feedforward 레이어가 연이어 쌓인 구조입니다. 이를 통해 모델은 입력 토큰 간의 관계를 파악할 수 있습니다.<br>
+    출력 레이어(Output Layer): Transformer 블록의 출력을 대상 어휘로 매핑합니다.<br>
+    확률적 경사 하강법(SGD) 옵티마이저와 CrossEntropyLoss 손실 함수를 사용했고 epoch 이후 모델의 성능을 평가하는 validation_loop이 포함되며 10번의 epoch 동안 훈련되었습니다. 그리고 predict 함수를 사용하여 숫자 시퀀스를 전달하고 시퀀스의 다음 예상되는 숫자 패턴을 예측함으로써 모델을 평가했습니다.
+  </p>
+  <br>
+  
+  
   
   
   <h2>CNN Scene Recognition   </h2><h5>Github Link: <a href="https://github.com/jkim574/CNN-Scene-Recognition/tree/main">https://github.com/jkim574/CNN-Scene-Recognition/tree/main</a></h5>
@@ -41,8 +49,18 @@ layout: default
     <li>train_mnist.py: MNIST 데이터셋에서 간단한 fully connected neural network(SimpleFCNet)를 학습합니다. train_miniplaces.py와 유사하게, 모델, 손실 함수, 옵티마이저, 데이터 전처리 및 데이터셋 로더를 설정합니다. 그런 다음 모델을 지정된 epoch 수만큼 학습하고, 성능을 평가합니다. </li>
     <li>student_code.py: 두 개의 신경망 모델(SimpleFCNet과 SimpleConvNet) 및 학습 및 테스트 함수를 정의합니다. SimpleFCNet은 MNIST 데이터셋을 위한 완전 연결 신경망이며, SimpleConvNet은 MiniPlaces 데이터셋을 위한 합성곱 신경망입니다. train_model 함수는 하나의 epoch에 대하여 학습하고, forward 및 backward pass를 수행하고 가중치를 업데이트합니다. test_model 함수는 테스트 또는 검증 세트에서 모델의 성능을 평가하고 정확도를 계산합니다. </li>
   </ul>
-
+  <br>
   
+  
+  
+  <h2>“On the Versatile Uses of Partial Distance Correlation in Deep Learning”   </h2>
+  <p>논문 데모 웹페이지: <a href="https://zhenxingjian.github.io/DC_webpage/index.html">https://zhenxingjian.github.io/DC_webpage/index.html</a><br>
+     Jupyter Notebook: <a href="https://github.com/zhenxingjian/Partial_Distance_Correlation/blob/main/Partial_Distance_Correlation.ipynb">https://github.com/zhenxingjian/Partial_Distance_Correlation/blob/main/Partial_Distance_Correlation.ipynb</a><br>
+  </p>  
+  <p>
+    세계 최고 권위 컴퓨터 비전 학회 중 하나인 ECCV 2022에서 발표할 논문 데모 웹페이지를 만들었습니다. Distance Correlation과 피어슨 상관관계의 차이점을 보여주기 위한 Jupyter Notebook 데모 파일을 만들어 그래프로 표현했습니다.
+  </p>
+  <br>
   
   
   <h2>Contact Information</h2>
