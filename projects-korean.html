@@ -7,7 +7,7 @@ layout: default
   
   
   <h2>Simple-ViT   </h2><h5>Github Link: <a href="https://github.com/jkim574/Simple-VIT">https://github.com/jkim574/Simple-VIT</a></h5>
-  <p>이 프로그램은 timm 라이브러리를 사용하여 사전 훈련된 Vision Transformer(ViT) 모델을 사용하여 이미지 분류를 하며 크게 다음 단계로 나누어집니다.</p>
+  <p>timm 라이브러리를 사용하여 사전 훈련된 Vision Transformer(ViT) 모델을 사용하여 이미지 분류를 하며 크게 다음 단계로 나누어집니다.</p>
   <ul>
     <li>timm 라이브러리를 설치합니다. </li>
     <li>모델 이름을 "vit_base_patch16_224"로 정의하고 장치를 GPU 또는 CPU로 설정합니다. </li>
@@ -26,23 +26,22 @@ layout: default
   
   <h2>Seq2Seq-Transformer   </h2><h5>Github Link: <a href="https://github.com/jkim574/Seq2Seq-Transformer">https://github.com/jkim574/Seq2Seq-Transformer</a></h5>
   <p>PyTorch에서 Transformer 아키텍처를 활용한 시퀀스-투-시퀀스 모델을 구현했습니다. 이 모델은 수치 시퀀스를 패턴을 학습하고 예측합니다. 사용자 지정 위치 인코딩, 인코더-디코더 트랜스포머 블록 및 타겟 마스킹을 사용하여 효과적인 훈련을 합니다. 이 구현에서 사용된 Transformer 모델은 다음과 같은 레이어로 구성됩니다.<br>
-    위치 인코더(Positional Encoder): 입력 임베딩에 위치 정보를 추가하여 모델이 시퀀스 정보를 인코딩할 수 있도록 합니다. 입력 시퀀스에 위치 인코딩을 계산하고 적용하는 사용자 정의 PositionalEncoding 클래스가 포함됩니다.<br>
-    임베딩(Embedding): 이 레이어는 입력 토큰을 연속 벡터 공간에 매핑합니다.<br>
-    Transformer 블록(Transformer Blocks): 이는 자기 어텐션 레이어와 feedforward 레이어가 연이어 쌓인 구조입니다. 이를 통해 모델은 입력 토큰 간의 관계를 파악할 수 있습니다.<br>
-    출력 레이어(Output Layer): Transformer 블록의 출력을 대상 어휘로 매핑합니다.<br>
-    확률적 경사 하강법(SGD) 옵티마이저와 CrossEntropyLoss 손실 함수를 사용했고 epoch 이후 모델의 성능을 평가하는 validation_loop이 포함되며 10번의 epoch 동안 훈련되었습니다. 그리고 predict 함수를 사용하여 숫자 시퀀스를 전달하고 시퀀스의 다음 예상되는 숫자 패턴을 예측함으로써 모델을 평가했습니다.
-  </p>
+  <ul>
+    <li>위치 인코더(Positional Encoder): 입력 임베딩에 위치 정보를 추가하여 모델이 시퀀스 정보를 인코딩할 수 있도록 합니다. 입력 시퀀스에 위치 인코딩을 계산하고 적용하는 사용자 정의 PositionalEncoding 클래스가 포함됩니다.</li>
+    <li>임베딩(Embedding): 이 레이어는 입력 토큰을 연속 벡터 공간에 매핑합니다.</li>
+    <li>Transformer 블록(Transformer Blocks): 이는 자기 어텐션 레이어와 feedforward 레이어가 연이어 쌓인 구조입니다. 이를 통해 모델은 입력 토큰 간의 관계를 파악할 수 있습니다.</li>
+    <li>출력 레이어(Output Layer): Transformer 블록의 출력을 대상 어휘로 매핑합니다.</li>
+  </ul>
+  <p>확률적 경사 하강법(SGD) 옵티마이저와 CrossEntropyLoss 손실 함수를 사용했고 epoch 이후 모델의 성능을 평가하는 validation_loop이 포함되며 10번의 epoch 동안 훈련되었습니다. 그리고 predict 함수를 사용하여 숫자 시퀀스를 전달하고 시퀀스의 다음 예상되는 숫자 패턴을 예측함으로써 모델을 평가했습니다.</p>
   <br>
   
   
   
   
-  <h2>CNN Scene Recognition   </h2><h5>Github Link: <a href="https://github.com/jkim574/CNN-Scene-Recognition/tree/main">https://github.com/jkim574/CNN-Scene-Recognition/tree/main</a></h5>
+  <h2>CNN-Scene-Recognition   </h2><h5>Github Link: <a href="https://github.com/jkim574/CNN-Scene-Recognition/tree/main">https://github.com/jkim574/CNN-Scene-Recognition/tree/main</a></h5>
   <p>Pytorch를 사용하여 손글씨 이미지 및 고유한 장면 범주의 이미지 레이블을 예측하는 간단한 딥 러닝 모델을 구축하였습니다. 이 프로젝트는 LeNet-5를 기반으로한 간단한 CNN 모델과 사용자 정의 CNN 아키텍처를 사용하여 모델을 구축하고, 학습하고, 평가하며, 테스트 데이터에 대한 예측을 수행합니다.<br>
      각 파일들은 다음과 같은 작업을 수행합니다.
-  
   <p/>
-  
   <ul>
     <li>dataloader.py: MiniPlaces 데이터셋을 위한 커스텀 데이터셋 클래스인 MiniPlaces 클래스를 정의합니다. 이 클래스는 PyTorch Dataset 클래스를 상속받으며 MiniPlaces 데이터셋을 로드하고, 다운로드 과정을 처리하며, 데이터 샘플과 레이블을 요청시 제공하는 역할을 합니다. </li>
     <li>train_miniplaces.py: MiniPlaces 데이터셋에 대해 간단한 합성곱 신경망 (SimpleConvNet)을 학습합니다. 먼저 모델, 손실 함수 및 옵티마이저를 설정하고, 학습 및 검증을 위한 데이터 변환 및 데이터셋 로더를 설정합니다. 그런 다음 지정된 epoch 수에 대해 모델을 학습하고 모델의 성능을 평가합니다. </li>
@@ -58,9 +57,24 @@ layout: default
      Jupyter Notebook: <a href="https://github.com/zhenxingjian/Partial_Distance_Correlation/blob/main/Partial_Distance_Correlation.ipynb">https://github.com/zhenxingjian/Partial_Distance_Correlation/blob/main/Partial_Distance_Correlation.ipynb</a><br>
   </p>  
   <p>
-    세계 최고 권위 컴퓨터 비전 학회 중 하나인 ECCV 2022에서 발표할 논문 데모 웹페이지를 만들었습니다. Distance Correlation과 피어슨 상관관계의 차이점을 보여주기 위한 Jupyter Notebook 데모 파일을 만들어 그래프로 표현했습니다.
+    세계 최고 권위 컴퓨터 비전 학회 중 하나인 ECCV 2022에서 발표할 논문 데모 웹페이지를 만들었습니다. 또한, Jupyter Notebook 데모 파일을 만들어 Distance Correlation과 피어슨 상관관계의 차이점을 보여주기 위해서 그래프로 표현했습니다.
   </p>
   <br>
+  
+  
+  <h2>Puzzle-Solver   </h2><h5>Github Link: <a href="https://github.com/jkim574/Puzzle-Solver">https://github.com/jkim574/Puzzle-Solver</a></h5>
+  <p>
+  1부터 8까지 라벨이 붙은 8개의 타일과 빈 타일이 있는 3x3 그리드에서 진행됩니다. 각 단계에서 인접한 타일(왼쪽, 오른쪽, 위, 아래)중 빈 타일만 골라서 이동하며 타일을 재배열하여 순서대로 만드는 것이 목표입니다. A* 검색 알고리즘을 사용하여 구현했습니다. 
+  </p>
+  <br>
+  
+  
+  
+  <h2>  </h2><h5>Github Link: <a href=""></a></h5>
+  
+  
+  
+  
   
   
   <h2>Contact Information</h2>
