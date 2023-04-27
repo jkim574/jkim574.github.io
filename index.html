@@ -17,6 +17,37 @@ layout: default
 
   <p>Here is my <a href="https://www.linkedin.com/in/joong-ho-kim-065083135/">LinkedIn profile</a></p>
   <p>Here are my projects</p>
+  <h2>Simple-ViT</h2>
+  <h5>Github Link: <a href="https://github.com/jkim574/Simple-VIT">https://github.com/jkim574/Simple-VIT</a></h5>
+  <p>This project demonstrates the use of a pre-trained Vision Transformer (ViT) model for image classification, using the timm library. The project is divided into several steps:</p>
+  <ul>
+  <li>Install the timm library.</li>
+  <li>Define the model name as "vit_base_patch16_224" and set the device to GPU or CPU.</li>
+  <li>Create a pre-trained ViT model using the timm library.</li>
+  <li>Transform the image for preprocessing. Here, the input image is divided into N patches (N=14x14 for ViT-Base) and transformed into a D=768 embedding vector by a trainable 2D convolution.</li>
+  <li>Download ImageNet labels and a test sample image (hammer.png).</li>
+  <li>Add a trainable positional embedding vector to each patch embedding vector to provide positional information. This enables the model to learn the distances between patches within the image and understand how similar the patches are to each other.</li>
+  <li>The N(=197) embedding vectors then pass through L(=12) encoders. The vectors are split into queries, keys, and values, which are each further split into H(=12) for multi-head attention.</li>
+  <li>Visualize the classification results to display the output probabilities for each class.</li>
+  </ul>
+  <p>This project demonstrates the use of a pre-trained Vision Transformer model for image classification and visualizes intermediate outputs and components of the ViT model, such as patch embeddings, positional embeddings, and multi-head attention, to understand the complex relationships between the input patches.</p>
+  <br>
+  <h2>Seq2Seq-Transformer</h2>
+  <h5>Github Link: <a href="https://github.com/jkim574/Seq2Seq-Transformer">https://github.com/jkim574/Seq2Seq-Transformer</a></h5>
+  <p>This project implements a sequence-to-sequence model using the Transformer architecture in PyTorch, which learns and predicts patterns in numerical sequences. The model employs custom positional encoding, an encoder-decoder Transformer block, and target masking for effective training. The Transformer model used in this implementation is composed of the following layers:</p>
+  <ul>
+  <li>Positional Encoder: Adds positional information to the input embeddings to allow the model to encode sequence information. The custom PositionalEncoding class that calculates and applies positional encoding to the input sequence is included.</li>
+  <li>Embedding: Maps input tokens to continuous vector space.</li>
+  <li>Transformer Blocks: A structure consisting of self-attention layers and feedforward layers stacked in sequence, allowing the model to understand relationships between input tokens.</li>
+  <li>Output Layer: Maps the output of the Transformer blocks to the target vocabulary.</li>
+  </ul>
+  <p>The model is trained using stochastic gradient descent (SGD) optimizer and the CrossEntropyLoss loss function, and includes a validation loop to evaluate the model's performance after each epoch. It is trained for 10 epochs, and evaluated by using the predict function to pass a sequence of numbers and predict the next expected number pattern in the sequence.</p>
+  <br>
+  <h2>CNN-Scene-Recognition</h2>
+  <h5>Github Link: <a href="https://github.com/jkim574/CNN-Scene-Recognition/tree/main">https://github.com/jkim574/CNN-Scene-Recognition/tree/main</a></h5>
+  <p>This project builds a simple deep learning model using Pytorch to predict image labels for handwritten digits and unique scene categories.
+
+
   <p>Here is a description of my past projects (in Korean): <a href="./projects-korean.html">Projects</a></p>
 
   <p></p>
