@@ -32,6 +32,7 @@ layout: default
   </ul>
   <p>This project demonstrates the use of a pre-trained Vision Transformer model for image classification and visualizes intermediate outputs and components of the ViT model, such as patch embeddings, positional embeddings, and multi-head attention, to understand the complex relationships between the input patches.</p>
   <br>
+
   <h2>Seq2Seq-Transformer</h2>
   <h5>Github Link: <a href="https://github.com/jkim574/Seq2Seq-Transformer">https://github.com/jkim574/Seq2Seq-Transformer</a></h5>
   <p>This project implements a sequence-to-sequence model using the Transformer architecture in PyTorch, which learns and predicts patterns in numerical sequences. The model employs custom positional encoding, an encoder-decoder Transformer block, and target masking for effective training. The Transformer model used in this implementation is composed of the following layers:</p>
@@ -43,10 +44,58 @@ layout: default
   </ul>
   <p>The model is trained using stochastic gradient descent (SGD) optimizer and the CrossEntropyLoss loss function, and includes a validation loop to evaluate the model's performance after each epoch. It is trained for 10 epochs, and evaluated by using the predict function to pass a sequence of numbers and predict the next expected number pattern in the sequence.</p>
   <br>
+
   <h2>CNN-Scene-Recognition</h2>
   <h5>Github Link: <a href="https://github.com/jkim574/CNN-Scene-Recognition/tree/main">https://github.com/jkim574/CNN-Scene-Recognition/tree/main</a></h5>
-  <p>This project builds a simple deep learning model using Pytorch to predict image labels for handwritten digits and unique scene categories.
+  <p>
+      A simple deep learning model using Pytorch for predicting handwritten images and labeled images of unique scene categories has been built. This project constructs, trains, evaluates, and performs predictions on the test data using a simple CNN model based on LeNet-5 and a custom CNN architecture.
+      <br>
+      Each file performs the following tasks:
+  </p>
+  <ul>
+      <li>dataloader.py: Defines the MiniPlaces class, a custom dataset class for the MiniPlaces dataset. This class inherits from the PyTorch Dataset class and handles loading the MiniPlaces dataset, processing the download, and providing data samples and labels when requested.</li>
+      <li>train_miniplaces.py: Trains a simple convolutional neural network (SimpleConvNet) on the MiniPlaces dataset. First, the model, loss function, and optimizer are set up, as well as data transformations and dataset loaders for training and validation. Then, the model is trained for the specified number of epochs and evaluated for performance.</li>
+      <li>train_mnist.py: Trains a simple fully connected neural network (SimpleFCNet) on the MNIST dataset. Similar to train_miniplaces.py, the model, loss function, optimizer, data preprocessing, and dataset loader are set up. Then, the model is trained for the specified number of epochs and evaluated for performance.</li>
+      <li>student_code.py: Defines two neural network models (SimpleFCNet and SimpleConvNet) and the training and testing functions. SimpleFCNet is a fully connected neural network for the MNIST dataset, and SimpleConvNet is a convolutional neural network for the MiniPlaces dataset. The train_model function trains for one epoch, performs a forward and backward pass, and updates the weights. The test_model function evaluates the model's performance on the test or validation set and calculates accuracy.</li>
+  </ul>
+  <br>
 
+  <h2>“On the Versatile Uses of Partial Distance Correlation in Deep Learning” </h2>
+  <h5>Paper Demo Webpage: <a href="https://zhenxingjian.github.io/DC_webpage/index.html">https://zhenxingjian.github.io/DC_webpage/index.html</a><br>
+      Jupyter Notebook: <a href="https://github.com/zhenxingjian/Partial_Distance_Correlation/blob/main/Partial_Distance_Correlation.ipynb">https://github.com/zhenxingjian/Partial_Distance_Correlation/blob/main/Partial_Distance_Correlation.ipynb</a>
+  </h5> 
+  <p>
+    I created a paper demo webpage that will be presented at ECCV 2022, one of the most prestigious computer vision conferences in the world. Additionally, I created a Jupyter Notebook demo file to show the difference between Distance Correlation and Pearson Correlation using graphs.
+  </p>
+  <br>
+  <h2>Introduction to Deep Learning with Keras Workshop</h2> 
+  <h5>Class Website: <a href="https://carpentries-incubator.github.io/deep-learning-intro/">https://carpentries-incubator.github.io/deep-learning-intro/</a><br>
+      Workshop Website: <a href="https://uw-madison-datascience.github.io/2022-04-21-uwmadison-deeplearning/">https://uw-madison-datascience.github.io/2022-04-21-uwmadison-deeplearning/</a>
+  </h5>
+  <p>
+    I participated as a helper in a Keras-based deep learning basics workshop held at the Data Science Hub, a research institution at the University of Wisconsin-Madison, teaching the fundamentals of machine learning, such as neural networks and model training.
+  </p>
+  <br>
+
+  <h2>Introduction to Deep Learning with Keras Workshop</h2> 
+  <h5>Course website: <a href="https://carpentries-incubator.github.io/deep-learning-intro/">https://carpentries-incubator.github.io/deep-learning-intro/</a><br>
+      Workshop website: <a href="https://uw-madison-datascience.github.io/2022-04-21-uwmadison-deeplearning/">https://uw-madison-datascience.github.io/2022-04-21-uwmadison-deeplearning/</a>
+  </h5>
+  <p>
+    I participated as an assistant in a basic deep learning workshop using Keras held at the Data Science Hub, a research institution at the University of Wisconsin-Madison, teaching the basics of machine learning such as neural networks and model training.
+  </p>
+  <br>
+
+  <h2>Puzzle-Solver   </h2><h5>Github Link: <a href="https://github.com/jkim574/Puzzle-Solver">https://github.com/jkim574/Puzzle-Solver</a></h5>
+  <p>
+    This project aims to rearrange the tiles numbered 1 through 8 and one blank tile in a 3x3 grid, by sliding the adjacent tile (left, right, up, down) of the blank tile in each step, to achieve the goal of arranging the tiles in order. It is implemented using the A* search algorithm.
+  </p>
+  <br>
+  <h2>Good Alarm    </h2><h5>Github Link: <a href="https://github.com/jkim574/Good-Alarm">https://github.com/jkim574/Good-Alarm</a></h5>
+  <p>
+    This is a joint project in which we developed an alarm clock application that charges users as the alarm and snooze keep ringing using the Stripe API. I implemented the feature of repeatedly setting the alarm and snooze.
+  </p>
+  <br>
 
   <p>Here is a description of my past projects (in Korean): <a href="./projects-korean.html">Projects</a></p>
 
