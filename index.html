@@ -49,17 +49,30 @@ layout: default
   <br>
 
   <h2>Full-Stack GPT</h2></h2>
-  <h5>Github Link: <a href="https://github.com/jkim574/CNN-Scene-Recognition/tree/main">https://github.com/jkim574/fullstack-gpt/blob/main/README.md</a></h5>
+  <h5>Github Link: <a href="https://github.com/jkim574/fullstack-gpt">https://github.com/jkim574/fullstack-gpt</a></h5>
   <p>
-      A simple deep learning model using Pytorch for predicting handwritten images and labeled images of unique scene categories has been built. This project constructs, trains, evaluates, and performs predictions on the test data using a simple CNN model based on LeNet-5 and a custom CNN architecture.
-      <br>
+      Full-Stack GPT is an innovative project that harnesses the capabilities of GPT (Generative Pre-trained Transformer) models in a full-stack environment. This project showcases a diverse range of applications, from document processing to interactive web applications, all powered by the advanced AI of GPT models. It demonstrates how GPT can be integrated into various aspects of a web-based platform, providing intelligent and automated solutions to complex tasks.
       Each file performs the following tasks:
   </p>
   <ul>
-      <li>dataloader.py: Defines the MiniPlaces class, a custom dataset class for the MiniPlaces dataset. This class inherits from the PyTorch Dataset class and handles loading the MiniPlaces dataset, processing the download, and providing data samples and labels when requested.</li>
-      <li>train_miniplaces.py: Trains a simple convolutional neural network (SimpleConvNet) on the MiniPlaces dataset. First, the model, loss function, and optimizer are set up, as well as data transformations and dataset loaders for training and validation. Then, the model is trained for the specified number of epochs and evaluated for performance.</li>
-      <li>train_mnist.py: Trains a simple fully connected neural network (SimpleFCNet) on the MNIST dataset. Similar to train_miniplaces.py, the model, loss function, optimizer, data preprocessing, and dataset loader are set up. Then, the model is trained for the specified number of epochs and evaluated for performance.</li>
-      <li>student_code.py: Defines two neural network models (SimpleFCNet and SimpleConvNet) and the training and testing functions. SimpleFCNet is a fully connected neural network for the MNIST dataset, and SimpleConvNet is a convolutional neural network for the MiniPlaces dataset. The train_model function trains for one epoch, performs a forward and backward pass, and updates the weights. The test_model function evaluates the model's performance on the test or validation set and calculates accuracy.</li>
+      <li>DocumentGPT.py: This script appears to create an interface for a GPT-based chatbot that can answer questions about uploaded files (like .txt, .pdf, or .docx).
+It utilizes the langchain library for processing and embedding files, and streamlit for the web interface.
+Features include embedding file contents, managing chat history, and providing a chat interface where users can ask questions about their uploaded document.</li>
+      <li>PrivateGPT.py: Similar to 01_DocumentGPT.py, but focuses on privacy by processing data offline.
+It uses ollama embeddings for file embedding, suggesting a different language model or approach for handling private data.
+The script ensures that data is processed locally, without sending it to external servers.</li>
+      <li>QuizGPT.py: This file is designed to create quizzes from user-uploaded documents or Wikipedia articles.
+It uses langchain and streamlit to generate quizzes, where the GPT model formulates questions and answers based on the provided content.
+Users can upload files or search Wikipedia articles, and the script generates a quiz to test knowledge on the given topic.</li>
+      <li>SiteGPT.py: This script seems to facilitate asking questions about the content of a specific website.
+It uses a sitemap loader to process website content and a GPT model to answer user queries based on the website's content.
+The user interface allows for entering a website URL and posing questions, with the script processing and providing answers.</li>
+      <li>ChefGPT.py: ChefGPT.py is a key component of the project, leveraging the power of FastAPI and GPT technology to provide a unique culinary experience. This application is specifically designed to revolutionize the way we discover Korean recipes. FastAPI for Efficient Web Service
+Built on the modern and efficient FastAPI framework, ChefGPT offers a robust and scalable solution for handling web requests. FastAPI's asynchronous capabilities ensure that the application can handle multiple requests simultaneously, providing a seamless user experience.
+ChefGPT is dedicated to bringing the rich and diverse flavors of Korean cuisine to your kitchen. By inputting ingredients you have on hand, ChefGPT utilizes advanced vector search technology to find and suggest authentic Korean recipes that include those ingredients.
+The heart of ChefGPT lies in its integration with GPT models and vector search technology. Using OpenAIEmbeddings from the langchain library, the application converts recipe data into vectors. This allows for efficient similarity searching, ensuring that the recipes returned are relevant to the user's input.
+The application features a straightforward HTTP GET endpoint (/recipes), which accepts ingredients as input and returns a list of matching Korean recipes. Each recipe is presented in aDocument object format, encompassing both the recipe details and preparation instructions, making it easy for users to follow along.
+ChefGPT uses Cloudflare for creating temporary URLs, ensuring a secure and isolated environment for testing and experimentation. This setup facilitates easy access to the application without the need for complex deployment strategies.</li>
   </ul>
   <br>
 
