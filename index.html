@@ -33,8 +33,8 @@ layout: default
   <p>This project demonstrates the use of a pre-trained Vision Transformer model for image classification and visualizes intermediate outputs and components of the ViT model, such as patch embeddings, positional embeddings, and multi-head attention, to understand the complex relationships between the input patches.</p>
   <br>
 
-  <h2>Transformer from Scratch</h2>
-  <h5>Github Link: <a href="https://github.com/jkim574/Seq2Seq-Transformer">https://github.com/jkim574/Seq2Seq-Transformer</a></h5>
+  <h2>Transformer and Multi-head Attention</h2>
+  <h5>Github Link: <a href="https://github.com/jkim574/Seq2Seq-Transformer">https://github.com/jkim574/Transformer</a></h5>
   <p>This project implements a custom Transformer architecture in PyTorch, which learns and predicts patterns in numerical sequences. The model employs custom positional encoding, an encoder-decoder Transformer block, and target masking for effective training. The Transformer model used in this implementation is composed of the following layers:</p>
   <ul>
   <li>Positional Encoder: Adds positional information to the input embeddings to allow the model to encode sequence information. The custom PositionalEncoding class that calculates and applies positional encoding to the input sequence is included.</li>
@@ -42,6 +42,9 @@ layout: default
   <li>Transformer Blocks: A structure consisting of self-attention layers and feedforward layers stacked in sequence, allowing the model to understand relationships between input tokens.</li>
   <li>Output Layer: Maps the output of the Transformer blocks to the target vocabulary.</li>
   </ul>
+  <div>
+      <img src="./" style="width:292px;">
+  </div>
   <p>The model is trained using stochastic gradient descent (SGD) optimizer and the CrossEntropyLoss loss function, and includes a validation loop to evaluate the model's performance after each epoch. It is trained for 10 epochs, and evaluated by using the predict function to pass a sequence of numbers and predict the next expected number pattern in the sequence.</p>
   <br>
 
