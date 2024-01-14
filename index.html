@@ -25,7 +25,7 @@ layout: default
       Each file performs the following tasks:
   </p>
   <ul>
-      <li>DocumentGPT.py: This script appears to create an interface for a GPT-based chatbot that can answer questions about uploaded files (like .txt, .pdf, or .docx).
+      <li>DocumentGPT.py: This script creates an interface for a GPT-based chatbot that can answer questions about uploaded files (like .txt, .pdf, or .docx).
 It utilizes the langchain library for processing and embedding files, and streamlit for the web interface.
 Features include embedding file contents, managing chat history, and providing a chat interface where users can ask questions about their uploaded document.</li>
       <li>PrivateGPT.py: Similar to 01_DocumentGPT.py, but focuses on privacy by processing data offline.
@@ -34,13 +34,13 @@ The script ensures that data is processed locally, without sending it to externa
       <li>QuizGPT.py: This file is designed to create quizzes from user-uploaded documents or Wikipedia articles.
 It uses langchain and streamlit to generate quizzes, where the GPT model formulates questions and answers based on the provided content.
 Users can upload files or search Wikipedia articles, and the script generates a quiz to test knowledge on the given topic.</li>
-      <li>SiteGPT.py: This script seems to facilitate asking questions about the content of a specific website.
+      <li>SiteGPT.py: This script facilitate by asking questions about the content of a specific website.
 It uses a sitemap loader to process website content and a GPT model to answer user queries based on the website's content.
 The user interface allows for entering a website URL and posing questions, with the script processing and providing answers.</li>
       <li>ChefGPT.py: ChefGPT.py is a key component of the project, leveraging the power of FastAPI and GPT technology to provide a unique culinary experience. This application utilize FastAPI for Efficient Web Service, and 
 built on the modern and efficient FastAPI framework. FastAPI's asynchronous capabilities ensure that the application can handle multiple requests simultaneously.
 By inputting ingredients, ChefGPT utilizes advanced vector search technology to find and suggest authentic Korean recipes that include those ingredients.
-The heart of ChefGPT lies in its integration with GPT models and vector search technology. Using OpenAIEmbeddings from the langchain library, the application converts recipe data into vectors. This allows for efficient similarity searching, ensuring that the recipes returned are relevant to the user's input.
+CheftGPT also integrates with GPT models and vector search technology. Using OpenAIEmbeddings from the langchain library, the application converts recipe data into vectors. This allows for efficient similarity searching, ensuring that the recipes returned are relevant to the user's input.
 The application features a straightforward HTTP GET endpoint (/recipes), which accepts ingredients as input and returns a list of matching Korean recipes. Each recipe is presented with the recipe details and preparation instructions, making it easy for users to follow along.
 ChefGPT also uses Cloudflare for creating temporary URLs, ensuring a secure and isolated environment for testing and experimentation. </li>
      <div>
