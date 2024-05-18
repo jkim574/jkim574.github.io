@@ -24,7 +24,7 @@ author:
   avatar           : "Joong Ho.jpeg"
   name             : "Joong Ho Kim"
   pronouns         : # example: "she/her"  
-  bio              : "Master's student in Computer Science studying Artificial Intelligence and Machine Learning."
+  bio              : "Master's student in Computer Science studying Artificial Intelligence and Machine Learning"
   location         : "San Bernardino, CA"
   employer         : "California State University San Bernardino"
   uri              : # URL
@@ -43,7 +43,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "https://github.com/jkim574"
+  github           : "jkim574"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
