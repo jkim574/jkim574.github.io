@@ -21,7 +21,7 @@ repository               : "jkim574/jkim574.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Joong Ho Kim"
   pronouns         : # example: "she/her"  
   bio              : "MS Student at CSUSB"
