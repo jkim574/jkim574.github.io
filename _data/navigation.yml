@@ -14,9 +14,10 @@ main:
 
   - title: "Teaching"
     url: /teaching/
+
+  # - Resume: "Resume"
+  # url: /files/Resume.pdf
     
   - title: "CV"
     url: /cv/
     
-  - title: "Contact"
-    url: /contact/
