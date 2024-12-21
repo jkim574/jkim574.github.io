@@ -6,26 +6,20 @@
 
 # main links links
 main:
-  # - title: "Research"
-  #   url: /research/ 
-
-  - title: "Projects"
-    url: /projects/ 
+  - title: "Research"
+    url: /research/
 
   - title: "Work Experience"
-    url: /work experience/
+    url: /work-experience/
 
-  # - Resume: "Resume"
-  # url: /files/Resume.pdf
-    
-  - title: "CV"
+  - title: "Resume"
     url: /files/Joong_Ho_Kim_Resume.pdf
 
 
   
   
-  - title: "Publications"
-    url: /publications/
+  #- title: "Publications"
+  #  url: /publications/
 
   #- title: "Talks"
   #  url: /talks/    
