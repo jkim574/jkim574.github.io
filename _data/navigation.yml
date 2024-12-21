@@ -10,22 +10,22 @@ main:
   #   url: /research/ 
 
   - title: "Projects"
-    url: /Projects/ 
+    url: /projects/ 
 
   - title: "Work Experience"
-    url: /Work Experience/
+    url: /work experience/
 
   # - Resume: "Resume"
   # url: /files/Resume.pdf
     
   - title: "CV"
-    url: /files/
+    url: /files/Joong_Ho_Kim_Resume.pdf
 
 
   
   
-  #- title: "Publications"
-  #  url: /publications/
+  - title: "Publications"
+    url: /publications/
 
   #- title: "Talks"
   #  url: /talks/    

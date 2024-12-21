@@ -7,8 +7,8 @@ redirect_from:
   - /about.html
 ---
 
+I’m Joong Ho Kim, a Master’s student in Computer Science at California State University, San Bernardino, where I work with Prof. Bilal Khan. I received my B.S at the University of Wisconsin - Madison College of Letters & Science in 2022. My current research revolves around applying machine learning and reinforcement learning to real-world challenges—such as detecting sensor anomalies in water treatment systems and fusing LiDAR and camera data for autonomous vehicles. I am particularly interested in building robust, data-driven solutions that address critical needs in industry and society. My broader research interests include machine learning, computer vision, and multi-modal modeling, and I’m eager to keep exploring new frontiers where AI can make a positive, tangible impact.
 
-Hello! I'm Joong Ho Kim, a current MS stduent in California State University, San Bernardino in the School of Computer Science & Engineering. I received my B.S at the University of Wisconsin - Madison College of Letters & Science in 2022. My current research focuses on machine learning and computer vision.
 
 
 <!---
