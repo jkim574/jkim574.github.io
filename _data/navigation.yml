@@ -6,29 +6,22 @@
 
 # main links links
 main:
-<<<<<<< HEAD
-  - title: "About"
-    url: /about/
-
-=======
   # - title: "Research"
   #   url: /research/ 
 
-  - title: "Publications"
-    url: /publications/ 
+  - title: "Projects"
+    url: /Projects/ 
 
-  - title: "Teaching"
-    url: /teaching/
+  - title: "Work Experience"
+    url: /Work Experience/
 
   # - Resume: "Resume"
   # url: /files/Resume.pdf
     
->>>>>>> 06615d4b21a93bc29bc3adce66018223231b6a42
   - title: "CV"
     url: /files/
 
-  - title: "Projects"
-    url: /cv/
+
   
   
   #- title: "Publications"
@@ -40,15 +33,3 @@ main:
   #- title: "Teaching"
   #  url: /teaching/    
     
-<<<<<<< HEAD
-  # - title: "Portfolio"
-  #  url: /portfolio/
-        
-  #- title: "Blog Posts"
-  #  url: /year-archive/
-    
-
-  #- title: "Guide"
-  #  url: /markdown/
-=======
->>>>>>> 06615d4b21a93bc29bc3adce66018223231b6a42
