@@ -15,13 +15,14 @@ Funded in part by the U.S. Department of Energy, the California State Department
 
 
 ## Cooperative LiDAR Labeling & Data Fusion
-In this project, multiple vehicles each equipped with LiDAR, camera, and IMU collect data from different vantage points. We then:
+This project involves multiple vehicles, each equipped with LiDAR, cameras, and IMUs, working collaboratively to collect data from diverse vantage points. The initiative is conducted in partnership with the [Collaborative Intelligence Systems Lab](https://cisl.ucr.edu/people/)under the guidance of Prof. Hang qiu.
 - **Calibrate and align** camera-based and LiDAR-based detections in a shared reference frame using transformation matrices (IMU/GPS, extrinsic calibration).
 - Employ **Weighted Boxes Fusion (WBF)** to merge overlapping bounding boxes from various models or sensors (e.g., LiDAR 3D detection, camera 2D/3D detection) into a single, high-confidence result.
 - Automate a significant portion of the annotation process, reducing manual labeling effort and enabling large-scale dataset creation.
 - Address occlusion and limited visibility scenarios by pooling sensor outputs from multiple vehicles.
 
 This advanced fusion pipeline improves reliability in challenging driving conditions (e.g., unprotected left turns, multi-vehicle interactions) and supports downstream tasks like multi-agent tracking and shared occupancy mapping.
+
 
 
 
